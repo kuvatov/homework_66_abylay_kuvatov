@@ -21,6 +21,22 @@ const container = document.getElementById("container");
 for (let i = 1; i <= 5; i++) {
     let div = document.createElement("div");
     div.className = "element";
-    div.innerHTML = "Element " + i;
+    let color = '';
+    if (i === 1) {
+    color = "gray";
+    } 
+    else if (i === 2) {
+    color = "red";
+    } 
+    else if (i === 3) {
+    color = "blue";
+    } 
+    else if (i === 4) {
+    color = "green";
+    } 
+    else if (i === 5) {
+    color = "orange";
+    }
+    div.innerHTML = "Element <span style='color:" + color + "'>" + i + "</span>";
     container.appendChild(div);
 }
