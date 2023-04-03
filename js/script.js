@@ -15,3 +15,12 @@ for (let i = 0; i < elements.length; i++) {
     elements[i].style.color = "green";
     }
 }
+
+// task3
+const container = document.getElementById("container");
+for (let i = 1; i <= 5; i++) {
+    let div = document.createElement("div");
+    div.className = "element";
+    div.innerHTML = "Element " + i;
+    container.appendChild(div);
+}
